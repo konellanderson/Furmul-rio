@@ -5,14 +5,18 @@
 
 #titulo{
     font-family: sans-serif;
-    color:blueviolet;
+    color: #380b61;
     margin-left: 7%;
 }
 
 #subtitulo{
     font-family: sans-serif;
-    color:blueviolet;
+    color:#380b61;
     margin-left: 10%;
+}
+
+#check{
+    display: inline-block;
 }
 
 fieldset{
@@ -20,17 +24,28 @@ fieldset{
 }
 
 body{
-    background-color: #fff8dc;
+    background-color: #f0f8ff;
     font-family: sans-serif;
     font-size: 1em;
-    color: darkmagenta;
+    color: #59429d;
     margin-left: 36%;
     margin-top: 2%;
     justify-content: center;
     }
 
     input, select, textarea, button{
-        border-radius: 4em;
+        font-family: sans-serif;
+        font-size: 1em;
+        color: #59429d;
+        border-radius: 5px;
+    }
+
+    .grupo::before, .grupo::after{
+        display: table;     
+    }
+
+    .grupo:after{
+        clear: both;
     }
 
     .campo {
@@ -39,7 +54,7 @@ body{
 
     .campo label{
         margin-bottom: 0.2em;
-        color: darkmagenta;
+        color: #59429d;
         display: block;
     }
 
@@ -50,7 +65,7 @@ body{
 
     .campo input[type="text"], .campo input[type="email"], .campo select, .campo textarea{
         padding: 0.2em;
-        border: 1px solid #fff8dc;
+        border: 1px solid #59429d;
         box-shadow: 2px 2px 2px rgba(0,0,0,0.2);
         display: block;
     }
@@ -60,7 +75,7 @@ body{
     }
 
     .campo input:focus, .campo select:focus, .campo textarea:focus{
-        background: rgb(197, 89, 12);
+        background: rgb(235, 193, 163);
     }
 
     .botao {
@@ -68,7 +83,7 @@ body{
         background: slateblue;
         border: 0;
         margin-bottom: 1em;
-        color: rgb(211, 4, 4);
+        color: #ffffff;
         padding: 0.2em 0.6em;
         box-shadow: 2px 2px 2px rgba(0,0,0,0.2);
         text-shadow: 1px 1px 1px rgba(0,0,0,0.5);
@@ -80,11 +95,11 @@ body{
         }
 
         .botao:hover{
-            background: rosybrown;
+            background #CCBBFF;
             box-shadow: inset 2px 2px 2px rgba(0,0,0,0.2);
             text-shadow: nome;
         }
 
-        .check {
-            display: inline-block;
+        .botao, select{
+            cursor: pointer;
         }
